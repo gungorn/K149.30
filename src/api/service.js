@@ -1,14 +1,14 @@
-import { baseurl } from './endpoints';
+import endpoints, { baseurl } from './endpoints';
 
 export const post = (endpoint, body) => {
   return new Promise((resolve, reject) => {
     const method = 'POST';
-    const headers = {};
+    const headers = { ...getHeaders(endpoint) };
     const t1 = new Date().getTime();
 
-    console.log(`Request.${method} start : ` + endpoint.replace(baseurl, ''), body, headers);
+    console.log(`Request.${method} start : ` + baseurl + endpoint, body, headers);
 
-    fetch(endpoint, { method, body, headers })
+    fetch(baseurl + endpoint, { method, body, headers })
       .then(convertJson)
       .then(res => resolve(processResponse(endpoint, res, t1, method), headers))
       .catch(e => {
@@ -49,4 +49,11 @@ const processResponse = (endpoint, res, t1, method) => {
 
   console.log(`Request.${method} finish : ` + endpoint.replace(baseurl, ''), `[${status}]`, `${t2 - t1}ms`, data);
   return { status, success, data };
+};
+
+const getHeaders = endpoint => {
+  switch (endpoint) {
+    case endpoints.login:
+      return { 'Content-Type': 'application/json' };
+  }
 };
