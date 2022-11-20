@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 
 import { spacing } from '~/configs';
 
-import { requestLogin, setApp } from '~/redux/actions';
+import { createUserWithFB, loginUserWithFB, requestLogin, setApp } from '~/redux/actions';
 
 // const mapStateToProps = ({ app }) => ({ app });
 const mapStateToProps = states => ({ app: states.app });
@@ -66,6 +66,38 @@ const Login = connect(
         }}
         onPress={() => dispatch(requestLogin())}>
         <Text>Login</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        style={{
+          width: '25%',
+          paddingVertical: spacing.s,
+          borderTopLeftRadius: 4,
+          borderTopRightRadius: 4,
+          borderBottomLeftRadius: 8,
+          borderBottomRightRadius: 8,
+          justifyContent: 'center',
+          alignItems: 'center',
+          backgroundColor: '#00000033',
+        }}
+        onPress={() => dispatch(createUserWithFB())}>
+        <Text>Create With FB</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        style={{
+          width: '25%',
+          paddingVertical: spacing.s,
+          borderTopLeftRadius: 4,
+          borderTopRightRadius: 4,
+          borderBottomLeftRadius: 8,
+          borderBottomRightRadius: 8,
+          justifyContent: 'center',
+          alignItems: 'center',
+          backgroundColor: '#00000033',
+        }}
+        onPress={() => dispatch(loginUserWithFB())}>
+        <Text>Login With FB</Text>
       </TouchableOpacity>
 
       {app.loginLoading && <Text>LOADING LOADING</Text>}

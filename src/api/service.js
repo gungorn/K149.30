@@ -21,12 +21,12 @@ export const post = (endpoint, body) => {
 export const get = endpoint => {
   return new Promise((resolve, reject) => {
     const method = 'GET';
-    const headers = {};
+    const headers = { ...getHeaders(endpoint) };
     const t1 = new Date().getTime();
 
-    console.log(`Request.${method} start : ` + endpoint.replace(baseurl, ''), headers);
+    console.log(`Request.${method} start : ` + baseurl + endpoint.replace(baseurl, ''), headers);
 
-    fetch(endpoint, { method, headers })
+    fetch(baseurl + endpoint, { method, headers })
       .then(convertJson)
       .then(res => resolve(processResponse(endpoint, res, t1, method), headers))
       .catch(e => {
@@ -55,5 +55,11 @@ const getHeaders = endpoint => {
   switch (endpoint) {
     case endpoints.login:
       return { 'Content-Type': 'application/json' };
+
+    default:
+      return {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${global.token}`,
+      };
   }
 };
