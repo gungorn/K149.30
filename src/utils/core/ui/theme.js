@@ -1,10 +1,10 @@
 //multiple theme
-import store from '~/store';
+import store from '~/redux';
 
-import * as palettes from '~/themes/palettes';
+import * as Palettes from '~/themes';
 
-export const getColor = c => palettes[store.getState().theme.theme][c];
-export const getColors = () => palettes[store.getState().theme.theme];
+export const getColors = () => Palettes[store.getState().app.selectedTheme];
+export const getColor = d => Palettes[store.getState().app.selectedTheme][d];
 
 //single theme
 // import { light } from '~/themes/palettes';

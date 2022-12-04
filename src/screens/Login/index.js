@@ -1,108 +1,91 @@
 import React from 'react';
-import { Text, View, TextInput, TouchableOpacity } from 'react-native';
+import { Text, View, TextInput, TouchableOpacity, StyleSheet, Image } from 'react-native';
 
 import { connect } from 'react-redux';
+import { light, night } from '~/assets';
 
 import { spacing } from '~/configs';
 
 import { createUserWithFB, loginUserWithFB, requestLogin, setApp } from '~/redux/actions';
 
-// const mapStateToProps = ({ app }) => ({ app });
-const mapStateToProps = states => ({ app: states.app });
-
-const mapDispatchToProps = dispatch => ({ dispatch });
-//const mapDispatchToProps = asdasdasd => ({ dispatch: asdasdasd });
+import { getColor } from '~/utils/core/ui/theme';
+import { W } from '~/utils/core/ui/dimensions';
 
 const Login = connect(
-  mapStateToProps,
-  mapDispatchToProps,
+  ({ app }) => ({ app }),
+  dispatch => ({ dispatch }),
 )(props => {
   const { dispatch, app } = props;
+  const { selectedTheme } = app;
+
+  const isDark = selectedTheme === 'dark';
+
+  const changeTheme = () => dispatch(setApp('selectedTheme', selectedTheme === 'dark' ? 'light' : 'dark'));
+
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <View style={{ width: '70%', marginVertical: spacing.s }}>
-        <TextInput
-          style={{
-            borderWidth: 1,
-            borderColor: '#00000033',
-            borderTopLeftRadius: 8,
-            borderTopRightRadius: 8,
-            borderBottomLeftRadius: 4,
-            borderBottomRightRadius: 4,
-          }}
-          keyboardType="email-address"
-          value={app.username}
-          onChangeText={d => dispatch(setApp('username', d))}
-        />
-
+    <View style={styles.main}>
+      <View style={styles.inputContainer}>
+        <TextInput style={styles.input} keyboardType="email-address" value={app.username} onChangeText={d => dispatch(setApp('username', d))} />
         <View style={{ margin: spacing.xs }} />
-
-        <TextInput
-          style={{
-            borderWidth: 1,
-            borderColor: '#00000033',
-            borderTopLeftRadius: 4,
-            borderTopRightRadius: 4,
-            borderBottomLeftRadius: 8,
-            borderBottomRightRadius: 8,
-          }}
-          secureTextEntry
-          value={app.password}
-          onChangeText={d => dispatch(setApp('password', d))}
-        />
+        <TextInput style={styles.input} secureTextEntry value={app.password} onChangeText={d => dispatch(setApp('password', d))} />
       </View>
 
-      <TouchableOpacity
-        style={{
-          width: '25%',
-          paddingVertical: spacing.s,
-          borderTopLeftRadius: 4,
-          borderTopRightRadius: 4,
-          borderBottomLeftRadius: 8,
-          borderBottomRightRadius: 8,
-          justifyContent: 'center',
-          alignItems: 'center',
-          backgroundColor: '#00000033',
-        }}
-        onPress={() => dispatch(requestLogin())}>
-        <Text>Login</Text>
+      <TouchableOpacity style={styles.button} onPress={() => dispatch(requestLogin())}>
+        <Text style={styles.buttonText}>Login with dummyJson</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity
-        style={{
-          width: '25%',
-          paddingVertical: spacing.s,
-          borderTopLeftRadius: 4,
-          borderTopRightRadius: 4,
-          borderBottomLeftRadius: 8,
-          borderBottomRightRadius: 8,
-          justifyContent: 'center',
-          alignItems: 'center',
-          backgroundColor: '#00000033',
-        }}
-        onPress={() => dispatch(createUserWithFB())}>
-        <Text>Create With FB</Text>
+      <TouchableOpacity style={styles.button} onPress={() => dispatch(createUserWithFB())}>
+        <Text style={styles.buttonText}>Create With firebase</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity
-        style={{
-          width: '25%',
-          paddingVertical: spacing.s,
-          borderTopLeftRadius: 4,
-          borderTopRightRadius: 4,
-          borderBottomLeftRadius: 8,
-          borderBottomRightRadius: 8,
-          justifyContent: 'center',
-          alignItems: 'center',
-          backgroundColor: '#00000033',
-        }}
-        onPress={() => dispatch(loginUserWithFB())}>
-        <Text>Login With FB</Text>
+      <TouchableOpacity style={styles.button} onPress={() => dispatch(loginUserWithFB())}>
+        <Text style={styles.buttonText}>Login With firebase</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.themeButton} onPress={changeTheme}>
+        {<Image source={isDark ? light : night} style={styles.image} />}
       </TouchableOpacity>
 
       {app.loginLoading && <Text>LOADING LOADING</Text>}
     </View>
   );
+});
+
+const styles = StyleSheet.create({
+  main: { flex: 1, justifyContent: 'center', alignItems: 'center' },
+
+  inputContainer: { width: '70%', marginVertical: spacing.s },
+  input: {
+    borderWidth: 1,
+    borderColor: getColor('lightGray'),
+    borderRadius: 4,
+    textAlign: 'center',
+    backgroundColor: getColor('inputBackground'),
+  },
+
+  button: {
+    width: '70%',
+    paddingVertical: spacing.s,
+    borderRadius: 4,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: getColor('main'),
+    marginBottom: 8,
+  },
+  buttonText: {
+    color: getColor('white'),
+  },
+
+  themeButton: {
+    position: 'absolute',
+    top: 16,
+    right: 16,
+  },
+
+  image: {
+    width: W(8),
+    height: W(8),
+  },
 });
 
 export { Login };

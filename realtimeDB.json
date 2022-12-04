@@ -1,0 +1,278 @@
+{
+  "products": {
+    "-NISTlyhgB8ZkLKXXybZ": {
+      "brand": "Apple",
+      "category": "smartphones",
+      "description": "An apple mobile which is nothing like apple",
+      "discountPercentage": 12.96,
+      "id": 1,
+      "images": [
+        "https://i.dummyjson.com/data/products/1/1.jpg",
+        "https://i.dummyjson.com/data/products/1/2.jpg",
+        "https://i.dummyjson.com/data/products/1/3.jpg",
+        "https://i.dummyjson.com/data/products/1/4.jpg",
+        "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+      ],
+      "price": 549,
+      "rating": 4.69,
+      "stock": 94,
+      "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
+      "title": "iPhone 9"
+    },
+    "-NISU-5rvqYVVrBkC63I": {
+      "brand": "Apple",
+      "category": "smartphones",
+      "description": "An apple mobile which is nothing like apple",
+      "discountPercentage": 12.96,
+      "id": 1,
+      "images": [
+        "https://i.dummyjson.com/data/products/1/1.jpg",
+        "https://i.dummyjson.com/data/products/1/2.jpg",
+        "https://i.dummyjson.com/data/products/1/3.jpg",
+        "https://i.dummyjson.com/data/products/1/4.jpg",
+        "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+      ],
+      "price": 549,
+      "rating": 4.69,
+      "stock": 94,
+      "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
+      "title": "iPhone 9"
+    },
+    "-NISUvACOMt8zAtTJYpa": {
+      "brand": "LED Lights",
+      "category": "home-decoration",
+      "description": "3D led lamp sticker Wall sticker 3d wall art light on/off button  cell operated (included)",
+      "discountPercentage": 16.49,
+      "id": 28,
+      "images": [
+        "https://i.dummyjson.com/data/products/28/1.jpg",
+        "https://i.dummyjson.com/data/products/28/2.jpg",
+        "https://i.dummyjson.com/data/products/28/3.png",
+        "https://i.dummyjson.com/data/products/28/4.jpg",
+        "https://i.dummyjson.com/data/products/28/thumbnail.jpg"
+      ],
+      "price": 20,
+      "rating": 4.82,
+      "stock": 54,
+      "thumbnail": "https://i.dummyjson.com/data/products/28/thumbnail.jpg",
+      "title": "3D Embellishment Art Lamp"
+    },
+    "-NISUvNdwbL2jDEh0BR0": {
+      "brand": "Flying Wooden",
+      "category": "home-decoration",
+      "description": "Package Include 6 Birds with Adhesive Tape Shape: 3D Shaped Wooden Birds Material: Wooden MDF, Laminated 3.5mm",
+      "discountPercentage": 15.58,
+      "id": 27,
+      "images": [
+        "https://i.dummyjson.com/data/products/27/1.jpg",
+        "https://i.dummyjson.com/data/products/27/2.jpg",
+        "https://i.dummyjson.com/data/products/27/3.jpg",
+        "https://i.dummyjson.com/data/products/27/4.jpg",
+        "https://i.dummyjson.com/data/products/27/thumbnail.webp"
+      ],
+      "price": 51,
+      "rating": 4.41,
+      "stock": 17,
+      "thumbnail": "https://i.dummyjson.com/data/products/27/thumbnail.webp",
+      "title": "Flying Wooden Bird"
+    },
+    "-NISUvhLMmeBikZYFUtC": {
+      "brand": "Boho Decor",
+      "category": "home-decoration",
+      "description": "Boho Decor Plant Hanger For Home Wall Decoration Macrame Wall Hanging Shelf",
+      "discountPercentage": 17.86,
+      "id": 26,
+      "images": [
+        "https://i.dummyjson.com/data/products/26/1.jpg",
+        "https://i.dummyjson.com/data/products/26/2.jpg",
+        "https://i.dummyjson.com/data/products/26/3.jpg",
+        "https://i.dummyjson.com/data/products/26/4.jpg",
+        "https://i.dummyjson.com/data/products/26/5.jpg",
+        "https://i.dummyjson.com/data/products/26/thumbnail.jpg"
+      ],
+      "price": 41,
+      "rating": 4.08,
+      "stock": 131,
+      "thumbnail": "https://i.dummyjson.com/data/products/26/thumbnail.jpg",
+      "title": "Plant Hanger For Home"
+    },
+    "-NISUvnME9zgn0fIFelj": {
+      "brand": "Dry Rose",
+      "category": "groceries",
+      "description": "Dry Rose Flower Powder Gulab Powder 50 Gram • Treats Wounds",
+      "discountPercentage": 13.58,
+      "id": 25,
+      "images": [
+        "https://i.dummyjson.com/data/products/25/1.png",
+        "https://i.dummyjson.com/data/products/25/2.jpg",
+        "https://i.dummyjson.com/data/products/25/3.png",
+        "https://i.dummyjson.com/data/products/25/4.jpg",
+        "https://i.dummyjson.com/data/products/25/thumbnail.jpg"
+      ],
+      "price": 70,
+      "rating": 4.87,
+      "stock": 47,
+      "thumbnail": "https://i.dummyjson.com/data/products/25/thumbnail.jpg",
+      "title": "Gulab Powder 50 Gram"
+    },
+    "-NISUwPp6-owfO1XLldU": {
+      "brand": "fauji",
+      "category": "groceries",
+      "description": "original fauji cereal muesli 250gm box pack original fauji cereals muesli fruit nuts flakes breakfast cereal break fast faujicereals cerels cerel foji fouji",
+      "discountPercentage": 16.8,
+      "id": 24,
+      "images": [
+        "https://i.dummyjson.com/data/products/24/1.jpg",
+        "https://i.dummyjson.com/data/products/24/2.jpg",
+        "https://i.dummyjson.com/data/products/24/3.jpg",
+        "https://i.dummyjson.com/data/products/24/4.jpg",
+        "https://i.dummyjson.com/data/products/24/thumbnail.jpg"
+      ],
+      "price": 46,
+      "rating": 4.94,
+      "stock": 113,
+      "thumbnail": "https://i.dummyjson.com/data/products/24/thumbnail.jpg",
+      "title": "cereals muesli fruit nuts"
+    },
+    "-NISUwiuW-sks6MZAq78": {
+      "brand": "Baking Food Items",
+      "category": "groceries",
+      "description": "Specifications of Orange Essence Food Flavour For Cakes and Baking Food Item",
+      "discountPercentage": 8.04,
+      "id": 23,
+      "images": [
+        "https://i.dummyjson.com/data/products/23/1.jpg",
+        "https://i.dummyjson.com/data/products/23/2.jpg",
+        "https://i.dummyjson.com/data/products/23/3.jpg",
+        "https://i.dummyjson.com/data/products/23/4.jpg",
+        "https://i.dummyjson.com/data/products/23/thumbnail.jpg"
+      ],
+      "price": 14,
+      "rating": 4.85,
+      "stock": 26,
+      "thumbnail": "https://i.dummyjson.com/data/products/23/thumbnail.jpg",
+      "title": "Orange Essence Food Flavou"
+    },
+    "-NISUxC8cDyr--PQexxz": {
+      "brand": "Bake Parlor Big",
+      "category": "groceries",
+      "description": "Product details of Bake Parlor Big Elbow Macaroni - 400 gm",
+      "discountPercentage": 15.58,
+      "id": 22,
+      "images": [
+        "https://i.dummyjson.com/data/products/22/1.jpg",
+        "https://i.dummyjson.com/data/products/22/2.jpg",
+        "https://i.dummyjson.com/data/products/22/3.jpg"
+      ],
+      "price": 14,
+      "rating": 4.57,
+      "stock": 146,
+      "thumbnail": "https://i.dummyjson.com/data/products/22/thumbnail.jpg",
+      "title": "Elbow Macaroni - 400 gm"
+    },
+    "-NISUxLfMlTkqS9rJtKC": {
+      "brand": "Saaf & Khaas",
+      "category": "groceries",
+      "description": "Fine quality Branded Product Keep in a cool and dry place",
+      "discountPercentage": 4.81,
+      "id": 21,
+      "images": [
+        "https://i.dummyjson.com/data/products/21/1.png",
+        "https://i.dummyjson.com/data/products/21/2.jpg",
+        "https://i.dummyjson.com/data/products/21/3.jpg"
+      ],
+      "price": 20,
+      "rating": 4.44,
+      "stock": 133,
+      "thumbnail": "https://i.dummyjson.com/data/products/21/thumbnail.png",
+      "title": "- Daal Masoor 500 grams"
+    },
+    "-NIS_iMvJXd4dzFD7CnS": {
+      "brand": "Samsung",
+      "category": "smartphones",
+      "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+      "discountPercentage": 15.46,
+      "id": 3,
+      "images": [
+        "https://i.dummyjson.com/data/products/3/1.jpg"
+      ],
+      "price": 1249,
+      "rating": 4.09,
+      "stock": 36,
+      "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+      "title": "Samsung Universe 9"
+    },
+    "-NIScefSD1dpOCR7JnAe": {
+      "brand": "Apple",
+      "category": "smartphones",
+      "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+      "discountPercentage": 17.94,
+      "id": 2,
+      "images": [
+        "https://i.dummyjson.com/data/products/2/1.jpg",
+        "https://i.dummyjson.com/data/products/2/2.jpg",
+        "https://i.dummyjson.com/data/products/2/3.jpg",
+        "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+      ],
+      "price": 899,
+      "rating": 4.44,
+      "stock": 34,
+      "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+      "title": "iPhone X"
+    },
+    "-NISebjKjgZdbrg573HH": {
+      "brand": "Impression of Acqua Di Gio",
+      "category": "fragrances",
+      "description": "Mega Discount, Impression of Acqua Di Gio by GiorgioArmani concentrated attar perfume Oil",
+      "discountPercentage": 8.4,
+      "id": 11,
+      "images": [
+        "https://i.dummyjson.com/data/products/11/1.jpg",
+        "https://i.dummyjson.com/data/products/11/2.jpg",
+        "https://i.dummyjson.com/data/products/11/3.jpg",
+        "https://i.dummyjson.com/data/products/11/thumbnail.jpg"
+      ],
+      "price": 13,
+      "rating": 4.26,
+      "stock": 65,
+      "thumbnail": "https://i.dummyjson.com/data/products/11/thumbnail.jpg",
+      "title": "perfume Oil"
+    },
+    "-NISfcQW15Mr0eSCJ9Vu": {
+      "brand": "L'Oreal Paris",
+      "category": "skincare",
+      "description": "L'OrÃ©al Paris introduces Hyaluron Expert Replumping Serum formulated with 1.5% Hyaluronic Acid",
+      "discountPercentage": 13.31,
+      "id": 16,
+      "images": [
+        "https://i.dummyjson.com/data/products/16/1.png",
+        "https://i.dummyjson.com/data/products/16/2.webp",
+        "https://i.dummyjson.com/data/products/16/3.jpg",
+        "https://i.dummyjson.com/data/products/16/4.jpg",
+        "https://i.dummyjson.com/data/products/16/thumbnail.jpg"
+      ],
+      "price": 19,
+      "rating": 4.83,
+      "stock": 110,
+      "thumbnail": "https://i.dummyjson.com/data/products/16/thumbnail.jpg",
+      "title": "Hyaluronic Acid Serum"
+    }
+  },
+  "user_products": {
+    "MxZSiaMee1cBYgYYCUakBcw76y53": {
+      "-NISU-Ble5lUsKKiopTU": "-NISU-5rvqYVVrBkC63I",
+      "-NISUvOtFaOxOdgl1-2q": "-NISUvACOMt8zAtTJYpa",
+      "-NISUvQQGf5aPVZOQmqH": "-NISUvNdwbL2jDEh0BR0",
+      "-NISUvkaOOOiuRJwLoM1": "-NISUvhLMmeBikZYFUtC",
+      "-NISUvqDhOzygX2qAaUH": "-NISUvnME9zgn0fIFelj",
+      "-NISUwTvbyfHdNrYn5rZ": "-NISUwPp6-owfO1XLldU",
+      "-NISUwleLLKyKEASdOJ9": "-NISUwiuW-sks6MZAq78",
+      "-NISUxHKKmRoMP1swKt5": "-NISUxC8cDyr--PQexxz",
+      "-NISUxOQRg6rBKas2nSB": "-NISUxLfMlTkqS9rJtKC",
+      "-NIS_iPmL5qU_b-y5CB0": "-NIS_iMvJXd4dzFD7CnS",
+      "-NISceqx9DMa9EtG8z0C": "-NIScefSD1dpOCR7JnAe",
+      "-NISebmxegaSCwjm4NGD": "-NISebjKjgZdbrg573HH",
+      "-NISfcVCRl_rAvVjUQ3i": "-NISfcQW15Mr0eSCJ9Vu"
+    }
+  }
+}

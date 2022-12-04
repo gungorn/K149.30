@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
 import { Provider } from 'react-redux';
 
@@ -9,12 +9,16 @@ import store from '~/redux';
 
 const App = props => {
   return (
-    <View style={{ flex: 1 }}>
+    <View style={styles.main}>
       <Provider store={store}>
         <Navigation />
       </Provider>
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  main: { flex: 1 },
+});
 
 export { App };
